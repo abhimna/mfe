@@ -1,0 +1,4 @@
+/* Remote A global reset — kept minimal on purpose.
+   Component styles live in .module.css files to avoid leaking into the host. */
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; }

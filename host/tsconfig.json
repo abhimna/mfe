@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "paths": {
+      // Teach TypeScript about the federated modules so imports don't error.
+      // At runtime these resolve to the remotes; at type-check time they
+      // resolve to the local type declaration file below.
+      "remoteA/*": ["./src/remotes/remoteA/*"],
+      "remoteB/*": ["./src/remotes/remoteB/*"]
+    }
+  },
+  "include": ["src"]
+}

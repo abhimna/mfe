@@ -1,0 +1,149 @@
+/* Shell-owned layout styles */
+
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Top nav (shell-owned) ────────────────────────────────── */
+.nav {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0 28px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navBrand {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navBrandDot {
+  width: 8px;
+  height: 8px;
+  background: var(--color-brand);
+  border-radius: 50%;
+}
+
+.navLinks {
+  display: flex;
+  gap: 4px;
+}
+
+.navLink {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #6b7280;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: background 0.1s, color 0.1s;
+}
+.navLink:hover  { background: #f3f4f6; color: #111; }
+.navLink.active { background: #f3f4f6; color: #111; font-weight: 500; }
+
+.navTag {
+  font-size: 10px;
+  color: #9ca3af;
+  letter-spacing: 0.03em;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+/* ── Page body ────────────────────────────────────────────── */
+.page {
+  flex: 1;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 28px;
+}
+
+.pageHeader {
+  margin-bottom: 28px;
+}
+
+.pageTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 4px;
+}
+
+.pageSubtitle {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0;
+}
+
+/* ── KPI row ──────────────────────────────────────────────── */
+.kpiRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+/* ── Charts row ───────────────────────────────────────────── */
+.chartsRow {
+  margin-bottom: 28px;
+}
+
+/* ── Table section ────────────────────────────────────────── */
+.tableSection {
+  margin-bottom: 28px;
+}
+
+/* ── Orders section ───────────────────────────────────────── */
+.ordersSection {
+  margin-bottom: 28px;
+}
+
+/* ── Origin legend ────────────────────────────────────────── */
+.originLegend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  padding: 14px 18px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #374151;
+}
+
+.originItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.originDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* ── Remote error fallback ────────────────────────────────── */
+.errorBox {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  padding: 20px;
+  color: #991b1b;
+  font-size: 13px;
+}
+
+.errorBox strong { display: block; margin-bottom: 4px; }

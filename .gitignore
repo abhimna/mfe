@@ -1,0 +1,4 @@
+node_modules/
+host/node_modules/
+remote-a/node_modules/
+remote-b/node_modules/
