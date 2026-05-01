@@ -33,4 +33,5 @@ Then open http://localhost:5173
 
 This is how the application looks like 
 
-![alt text](<New Note.jpeg>)
+<img width="2534" height="2106" alt="New Note" src="https://github.com/user-attachments/assets/0f471d0c-b191-4563-8c7e-043e9c076d63" />
+
